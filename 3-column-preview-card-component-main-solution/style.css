@@ -1,0 +1,120 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Outfit', sans-serif;
+	background-color: hsl(0, 0%, 95%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	font-size: 15px;
+/*	line-height: 20px;*/
+/*	color :hsl(0, 0%, 95%)  for headings buttons bg*/
+/*	background-color: hsla(0, 0%, 100%, 0.75); text color*/
+/*	background-color: hsl(184, 100%, 22%); middlie card bg-color*/
+}
+
+
+.container{
+	width: 90%;
+	max-width: 900px;
+	height: 450px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+/*	overflow: hidden;*/
+	justify-content: space-between;
+
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0px;
+}
+p{
+	color:hsla(0, 0%, 100%, 0.75) ;
+	font-weight: 400;
+}
+h1{
+	color: hsl(0, 0%, 95%);
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+ .left{
+	padding: 30px;
+	background-color: hsl(31, 77%, 52%);
+	height: 100%;
+}
+.middle{
+	padding: 30px;
+	background-color: hsl(184, 100%, 22%);
+	height: 100%;
+}
+.right{
+	padding: 30px;
+	background-color: hsl(179, 100%, 13%);
+	height: 100%;
+}
+img{
+	width: 60px;
+}
+
+button{
+	width: 70%;
+	height: 40px;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	font-weight: 700;
+	cursor: pointer;
+}
+button:hover{
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border:2px solid hsl(0, 0%, 95%);
+	color: hsl(0, 0%, 95%);
+
+}
+
+.btn-1{
+	color:hsl(31, 77%, 52%) ;
+}
+.btn-2{
+	
+	color: hsl(184, 100%, 22%);
+}
+.btn-3{
+	
+	color: hsl(179, 100%, 13%);
+}
+
+/*Mobile Responsiveness*/
+
+
+@media (max-width:375px){
+	.container{
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+	.card{
+/*		padding-top: 30px;*/
+/*		height: 400px;*/
+	}
+	button{
+		margin-top: 30px;
+	}
+	p{
+		margin-top: 30px;
+	}
+}
